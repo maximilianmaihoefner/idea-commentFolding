@@ -1,0 +1,22 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "http://plugins.jetbrains.com/plugin.dtd">
+<idea-plugin version="2">
+    <id>commentFolding</id>
+    <name>Comment Folding</name>
+    <description>Expand/Collapse Comments</description>
+    <vendor email="" url="https://github.com/maximilianmaihoefner/idea-commentFolding">Maximilian Maihöfner</vendor>
+    git config --global user.name
+    <idea-version since-build="141.1532"/>
+
+    <actions>
+        <group id="com.maximilianmaihoefner.commentFolding.folding">
+            <separator/>
+            <add-to-group group-id="FoldingGroup" anchor="last"/>
+        </group>
+        <action class="com.maximilianmaihoefner.actions.ExpandCommentsAction" id="expandComments" text="Expand Comments">
+            <add-to-group group-id="com.maximilianmaihoefner.commentFolding.folding" anchor="last"/>
+        </action>
+        <action class="com.maximilianmaihoefner.actions.CollapseCommentsAction" id="collapseComments" text="Collapse Comments">
+            <add-to-group group-id="com.maximilianmaihoefner.commentFolding.folding" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>

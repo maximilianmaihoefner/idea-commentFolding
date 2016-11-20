@@ -1,0 +1,15 @@
+plugins {
+    id "org.jetbrains.intellij" version "0.1.10"
+}
+
+apply plugin: 'idea'
+apply plugin: 'java'
+
+intellij {
+    version 'IC-14.1.4'
+    downloadSources false
+    pluginName 'idea-commentFolding'
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_6
+targetCompatibility = JavaVersion.VERSION_1_6
