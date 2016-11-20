@@ -4,7 +4,7 @@
     <name>Comment Folding</name>
     <description>Expand/Collapse Comments</description>
     <vendor email="" url="https://github.com/maximilianmaihoefner/idea-commentFolding">Maximilian Maihöfner</vendor>
-    git config --global user.name
+
     <idea-version since-build="141.1532"/>
 
     <actions>
